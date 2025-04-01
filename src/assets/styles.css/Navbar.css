@@ -1,0 +1,43 @@
+  *{
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: rgba(162, 237, 219, 0.507);
+  margin: revert;
+  padding: 0;
+  }
+
+
+.enlaces {
+    list-style-type: none;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .enlaces a {
+    text-decoration: none;
+    color: rgba(18, 17, 17, 0.749);
+    margin-right: 10px;
+    padding-right: 30px;
+    border-right: 1px solid rgba(41, 38, 38, 0.785);
+  }
+  .enlaces a:hover {
+    color: rgba(165, 42, 42, 0.642);
+  }
+
+.logo{
+  width: 8rem;
+  border-radius: 10px;
+  padding: 3rem;
+}
+
+.h1principal{
+    font-weight: 400;
+    font-size: 4rem;
+}
+
+.logocarrito{
+  width: 3rem;
+  border-radius: 50px;
+  display: flex;
+  justify-content:flex-end;
+  margin-left: auto;
+}
