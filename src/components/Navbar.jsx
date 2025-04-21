@@ -8,7 +8,7 @@ const Navbar = () => {
         <div className="enlaces"> 
           <a href="">SOBRE MI</a>
           <a href="">EL ESTUDIO</a>
-          <a href="">CONTACTO</a>
+          <a href="">CUIDADOS</a>
           <a href="">DISEÑOS</a>
         </div>
         <CartWidget/>

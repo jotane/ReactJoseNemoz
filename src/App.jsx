@@ -1,15 +1,21 @@
 
 import './App.css'
-import Navbar from './components/Navbar'
-import Itemlistcontainer from './components/Itemlistcontainer.jsx'
+import NavbarBoostrap from './components/NavbarBoostrap.jsx'
+import ItemListContainer from './components/ItemListContainer.jsx'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 
 function App() {
 
   return (
-    <>
-    <Navbar/>
-    <Itemlistcontainer greeting='Bienvenido a Jota Tattoo' class="h1principal"/>
-    </>
+    <BrowserRouter>
+    <NavbarBoostrap/>
+<Routes>
+  <Route path='/' element={<ItemListContainer greeting='BIENVENIDOS'/>}/>
+  {/*<Route path='/item' element={<ItemDetailContainer/>}/> */}   
+</Routes>
+
+</BrowserRouter>
   )
 }
 
