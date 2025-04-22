@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom'
 const Navbar = () => {
     return (
       <nav className="barraNav"> 
-      <img src='../estampilla.jpg' className='logo'/>
+      <img src='../estampilla.jpg' className='logo' alt='imagen inicial'/>
         <div className="enlaces"> 
           <NavLink to="/category/">SOBRE MI</NavLink>
           <NavLink href="">EL ESTUDIO</NavLink>
