@@ -4,26 +4,25 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import '../assets/styles.css/Navbar.css'
 import CartWidget from './CartWidget'
+import { NavLink } from 'react-router-dom';
 
 function NavbarBoostrap() {
   return (
     <><Navbar expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand as={NavLink} to='/'>
           <img src="../estampilla.jpg" className="logo"/>
           </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="#home">EL ESTUDIO  |</Nav.Link>
-            <Nav.Link href="#link">  CONTACTO  </Nav.Link>
-            <NavDropdown title="PRODUCTOS" href="#prod" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Diseños  | </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                    Cuidados  |
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">  Ropita</NavDropdown.Item>
-              <NavDropdown.Divider />
+            <Nav.Link href="#link">  CONTACTO  |</Nav.Link>
+            <NavDropdown title=" PRODUCTOS" id="basic-nav-dropdown">
+              <NavDropdown.Item as={NavLink} to='/category/Disenos'>Diseños  | </NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to='/category/Cuidados'>  Cuidados  | </NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to='/category/Ropita'>  Ropita</NavDropdown.Item>
+              
               
             </NavDropdown>
           </Nav>

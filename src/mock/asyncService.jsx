@@ -5,7 +5,7 @@ const products = [
         price: 0,
         description: 'luna',
         stock: '1',
-        category:'Diseños',
+        category:'Disenos',
         img: '../diseno1.jpg',
     },
     {
@@ -14,7 +14,7 @@ const products = [
         price: 0,
         description:'corazon',
         stock: 1,
-        category:'Diseños',
+        category:'Disenos',
         img:'../diseno2.jpg'
     },
     {
@@ -23,7 +23,7 @@ const products = [
         price: 0,
         description:'equilibrio',
         stock: 1,
-        category:'Diseños',
+        category:'Disenos',
         img:'../diseno3.jpg',
     },
     {
@@ -85,5 +85,14 @@ export const getProducts = () => {
             }
         }, 2000)
         
+    })
+}
+
+export const getOneProducts = (id) => {
+    return new Promise((resolve) => {
+        let productFound = products.find((prod) => prod.id === id)
+        setTimeout (() =>{
+            resolve(productFound)
+        }, 1500)  
     })
 }
