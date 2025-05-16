@@ -28,6 +28,7 @@ const ItemListContainer = ({greeting}) => {
       })
     
     setData(list)
+    console.log("🔥 Datos cargados desde Firestore:", data)
     })
 
     .catch((error) => console.log(error))

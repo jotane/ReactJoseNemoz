@@ -2,7 +2,7 @@ const products = [
     {
         id:'01',
         name: 'diseno1',
-        price: 0,
+        price: 10,
         description: 'luna',
         stock: '1',
         category:'Disenos',
@@ -11,7 +11,7 @@ const products = [
     {
         id:'02',
         name: 'diseno2',
-        price: 0,
+        price: 20,
         description:'corazon',
         stock: 1,
         category:'Disenos',
@@ -20,7 +20,7 @@ const products = [
     {
         id:'03',
         name:'diseno3',
-        price: 0,
+        price: 30,
         description:'equilibrio',
         stock: 1,
         category:'Disenos',
@@ -67,7 +67,7 @@ const products = [
         name:'remera2',
         price:6500,
         description:'remeradiseño',
-        stock:'5',
+        stock: 5,
         category:'Ropita',
         img:'../remera2.jpg',
     },
